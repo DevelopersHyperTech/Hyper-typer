@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Saira+Semi+Condensed&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #5BC0F8;
+    margin: 0;
+    justify-content: center;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background-color: #FEF9EF;
+}
+
+.settings {
+    background-color: #0081C9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.settings.hide {
+    transform: translateY(-100%);
+}
+
+select {
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #FEF9EF;
+    margin-left: 3px;
+    border: 0;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: 0;
+    border: 3px solid #a7c5e3;
+}
+
+.container {
+    background-color: #FFC93C;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    position: relative;
+    width: 500px;
+    text-align: center;
+}
+
+h2 {
+    background-image: #E3F6FF;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+p {
+    font-size: 18px;
+}
+
+input {
+    background-color: #fff;
+    border: 0;
+    padding: 12px 20px;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+input:focus {
+    outline: 0;
+    border: 3px solid #a7c5e3;
+}
+
+.score-container {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}
+
+.time-container {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.end-game-container {
+    background-color: inherit;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.end-game-container button {
+    text-align: center;
+}
