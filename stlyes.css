@@ -71,7 +71,11 @@ select:focus {
     width: 500px;
     text-align: center;
 }
-
+@media (max-width:800px) {
+    .container {
+        width: 350px;
+    }
+}
 h2 {
     background-image: #E3F6FF;
     padding: 10px;
